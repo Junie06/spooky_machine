@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#100e17">
+    <title>Spooky Machine — ghost stories from the dark</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <p class="eyebrow">A GHOST STORY GENERATOR</p>
+      <h1>Something stirs<br>in the <span>dark.</span></h1>
+      <p class="intro">Give the darkness an idea. See what comes back.</p>
+
+      <form id="story-form">
+        <label for="seed">Your story idea <span>(optional)</span></label>
+        <textarea id="seed" maxlength="500" rows="3" placeholder="A knock from inside the locked attic…"></textarea>
+        <button id="generate" type="submit">Tell me a ghost story <span aria-hidden="true">→</span></button>
+      </form>
+
+      <p id="status" role="status" aria-live="polite"></p>
+      <article id="story" class="story" aria-live="polite" hidden></article>
+
+      <footer>Generated on this computer with an open-weight model.</footer>
+    </main>
+  </body>
+</html>
